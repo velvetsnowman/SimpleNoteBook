@@ -1,6 +1,6 @@
 # frozen_string_literal: true
-require 'NotePrinter.rb'
-require 'NoteHandler.rb'
+require 'notePrinter.rb'
+require 'noteHandler.rb'
 
 describe NotePrinter do
   let (:noteHandler) { NoteHandler.new }

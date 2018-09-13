@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'NoteHandler.rb'
+require 'noteHandler.rb'
 
 describe NoteHandler do
   let (:subject)     { NoteHandler.new              }
@@ -8,6 +8,15 @@ describe NoteHandler do
   it 'should let a user store a note with a title and a body' do
     subject.writeNote('Shopping list', 'bananas')
     expect(subject.notebook).to include(body: 'bananas', title: 'Shopping list')
+  end
+
+  it 'shoud throw an error if a user enters an invalid format' do
+      expect { subject.writeNote(1, 'bananas') }.to raise_error 'Must be a string'
+  end
+
+  it 'shoud throw an error if a user enters an invalid format' do
+    subject.writeNote('Shopping list', 'bananas')
+    expect { subject.printNote("1") }.to raise_error 'You must enter a number'
   end
 
   specify do

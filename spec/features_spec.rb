@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'NoteHandler.rb'
+require 'noteHandler.rb'
 describe 'NoteBook' do
   it 'should let a user create a notebook with a title and body' do
     my_notebook = NoteHandler.new

@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative 'NotePrinter.rb'
+require_relative 'notePrinter.rb'
 
 class NoteHandler
   attr_reader :notebook,
@@ -11,6 +11,7 @@ class NoteHandler
   end
 
   def writeNote(title, body)
+    raise "Must be a string" unless (title.is_a? String) && (body.is_a? String)
     @notebook.push(
       body: body.to_s,
       title: title.to_s
@@ -26,6 +27,7 @@ class NoteHandler
   end
 
   def printNote(title_index)
+    raise "You must enter a number" unless (title_index.is_a? Integer)
     @notePrinter.printNote(@notebook[title_index - 1])
   end
 end
