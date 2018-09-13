@@ -43,37 +43,19 @@ cd simpleNoteBook
 ## User Stories
 
 ```
-As a client,
-So I can own a bank account,
-I would like to be able to create one with an initial balance of 0.
+As a user,
+So I can use a notebook,
+I would like to be able to add a title and a body.
 ```
 
 ```
-As a client,
-So I can safely store my hard earned money,
-I would like to be able to deposit a sum into my bank account.
+As a user,
+So I can see what I have written,
+I would like to view a list of all my titles.
 ```
 
 ```
-As a client,
-So I can spend my hard earned money,
-I would like to be able to withdraw a sum from my bank account
-```
-
-```
-As a client,
-So I can see my personal wealth,
-I would like to be able to see the total amount of money I have in my bank account
-```
-
-```
-As a client,
-So I can keep track of my transactions,
-I would like to be able to see a transaction date
-```
-
-```
-As a client,
-So I can see a summary of my account,
-I would like to be able to see my bank statement
+As a user,
+So I can view a note's contents,
+I would like to chose a title and view its body.
 ```
